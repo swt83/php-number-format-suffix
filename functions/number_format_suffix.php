@@ -1,6 +1,6 @@
 <?php
 
-function number_format_suffix($num, $superscript = false) {
+function number_format_suffix($num, $strip_html = false) {
 
     // calculate suffix
     if (!in_array(($num % 100),array(11,12,13))) {
@@ -16,5 +16,5 @@ function number_format_suffix($num, $superscript = false) {
     $num = number_format($num);
 
     // return
-    return $superscript ? $num.'<sup>'.$suffix.'</sup>' : $num.$suffix ;
+    return !$strip_html ? $num.'<sup>'.$suffix.'</sup>' : $num.$suffix ;
 }
