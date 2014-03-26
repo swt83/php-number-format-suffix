@@ -1,6 +1,6 @@
 # Number Format Suffix
 
-A simple function to print a number w/ proper suffix.
+A PHP function for printing a number suffix.
 
 ## Usage
 

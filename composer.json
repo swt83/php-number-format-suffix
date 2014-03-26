@@ -1,0 +1,21 @@
+{
+    "name": "travis/number_format_suffix",
+    "description": "A PHP function for printing a number suffix.",
+    "homepage": "https://github.com/swt83/php-number-format-suffix",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scott Travis",
+            "email": "scott.w.travis@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "files": [
+            "src/number_format_suffix.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
