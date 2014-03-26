@@ -1,10 +1,10 @@
 # Number Format Suffix
 
-A PHP function for printing a number suffix.
+A PHP function for printing a number w/ a suffix.
 
 ## Usage
 
 ```php
-echo number_format_suffix(2); // returns "2nd"
-echo number_format_suffix(2, true); // returns "2<sup>nd</sup>"
+echo number_format_suffix(2000); // returns "2,000th"
+echo number_format_suffix(2000, true); // returns "2,000<sup>th</sup>"
 ```

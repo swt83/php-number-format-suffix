@@ -1,6 +1,6 @@
 {
     "name": "travis/number_format_suffix",
-    "description": "A PHP function for printing a number suffix.",
+    "description": "A PHP function for printing a number w/ a suffix.",
     "homepage": "https://github.com/swt83/php-number-format-suffix",
     "license": "MIT",
     "authors": [
