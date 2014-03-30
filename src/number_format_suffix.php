@@ -4,6 +4,9 @@ if (!function_exists('number_format_suffix'))
 {
     function number_format_suffix($num, $add_sup = false)
     {
+        // set type
+        $num = (int) $num;
+        
         // calculate suffix
         if (!in_array(($num % 100), array(11,12,13)))
         {
