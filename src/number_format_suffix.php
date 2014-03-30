@@ -2,12 +2,10 @@
 
 if (!function_exists('number_format_suffix'))
 {
-    function number_format_suffix($num, $add_sup = false)
+    function number_format_suffix($num, $html_mode = false)
     {
-        // set type
-        $num = (int) $num;
-        
-        // calculate suffix
+        // format suffix
+        $suffix = null;
         if (!in_array(($num % 100), array(11,12,13)))
         {
             switch ($num % 10)
@@ -17,12 +15,12 @@ if (!function_exists('number_format_suffix'))
                 case 3: $suffix = 'rd';
             }
         }
-        $suffix = 'th';
+        if (!$suffix) $suffix = 'th';
 
-        // calculate format
+        // format number
         $num = number_format($num);
 
         // return
-        return $add_sup ? $num.'<sup>'.$suffix.'</sup>' : $num.$suffix;
+        return $html_mode ? $num.'<sup>'.$suffix.'</sup>' : $num.$suffix;
     }
 }
